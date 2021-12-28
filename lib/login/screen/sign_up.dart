@@ -24,18 +24,18 @@ class _SignUpState extends State<SignUp> {
                 padding: const EdgeInsets.fromLTRB(15, 40, 0, 0),
                 child: Container(
 
-                    child: GestureDetector(
-                        child: Icon(Icons.arrow_back),
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => SignInPage()),
-                          );
-                        }
-                    ),
+                  child: GestureDetector(
+                      child: Icon(Icons.arrow_back),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SignInPage()),
+                        );
+                      }
+                  ),
+                ),
               ),
-          ),
 
 
 
@@ -115,7 +115,7 @@ class _SignUpState extends State<SignUp> {
                       );
                     },
                     child: Row(
-                      children: [
+                      children: const [
                         Text("SIGN UP"),
                         Icon(Icons.forward),
 
@@ -131,19 +131,19 @@ class _SignUpState extends State<SignUp> {
                 padding: const EdgeInsets.fromLTRB(100, 120, 10, 20),
                 child: Row(
                   children: [
-                    Text('Already have a account?',
+                    const Text('Already have a account?',
                       style: TextStyle(
                           fontSize: 12, fontWeight: FontWeight.bold
                       ),),
 
 
                     GestureDetector(
-                        child: Text('Sign In',
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                          color: Color(0xffFBB465)
-                        ),),
+                        child: const Text('Sign In',
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xffFBB465)
+                          ),),
                         onTap: () {
                           Navigator.push(
                             context,

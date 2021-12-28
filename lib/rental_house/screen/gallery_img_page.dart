@@ -15,35 +15,35 @@ class GalleryImgagePage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
 
-        body: Stack(
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                borderRadius:  BorderRadius.circular(40),
-                image: DecorationImage(
-                    image: AssetImage(gallery_detail.gallery_img_url),
-                    fit: BoxFit.cover
-                ),
-              ),
-
-            ),
-            Container(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(15, 40, 0, 0),
-                child: Container(
-
-                  child: GestureDetector(
-                      child: Icon(Icons.arrow_back),
-                      onTap: () {
-                        Navigator.pop(context);
-                      }
+          body: Stack(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius:  BorderRadius.circular(40),
+                  image: DecorationImage(
+                      image: AssetImage(gallery_detail.gallery_img_url),
+                      fit: BoxFit.cover
                   ),
                 ),
-              ),
 
-            )
-          ],
-        )
+              ),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(15, 40, 0, 0),
+                  child: Container(
+
+                    child: GestureDetector(
+                        child: Icon(Icons.arrow_back),
+                        onTap: () {
+                          Navigator.pop(context);
+                        }
+                    ),
+                  ),
+                ),
+
+              )
+            ],
+          )
 
       ),
     );

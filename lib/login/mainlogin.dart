@@ -12,6 +12,7 @@ class _MainLogInPageState extends State<MainLogInPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home:SignInPage (),
     );
   }

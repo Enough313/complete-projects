@@ -3,7 +3,6 @@ import 'package:enoughmobileui/rental_house/screen/home_page.dart';
 import 'package:flutter/material.dart';
 
 import 'card/maincard.dart';
-import 'getfix/screen/home_page.dart';
 import 'hotel_book/screen/home_page.dart';
 import 'login/mainlogin.dart';
 
@@ -50,14 +49,7 @@ class _MyappPageState extends State<MyappPage> {
                 },
               ),
             ),
-            Card(
-              child: ListTile(
-                leading: Text('GetFix Project'),
-                onTap: (){
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>GetFixHomePage()));
-                },
-              ),
-            ),
+
             Card(
               child: ListTile(
                 leading: Text('Rental Home Project'),

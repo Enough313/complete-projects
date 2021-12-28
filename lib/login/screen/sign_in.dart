@@ -18,16 +18,16 @@ class _SignInPageState extends State<SignInPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Text for Login
-              Padding(
-                padding: const EdgeInsets.fromLTRB(15, 150, 15, 0),
+              const Padding(
+                padding: EdgeInsets.fromLTRB(15, 150, 15, 0),
                 child: Text('Login',
                   style: TextStyle(fontSize: 40,
                     fontWeight: FontWeight.bold,
                   ),),
               ),
               // Text Please sign in to continue
-              Padding(
-                padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
+              const Padding(
+                padding: EdgeInsets.fromLTRB(15, 0, 15, 15),
                 child: Text('Please sign in to continue',
                   style: TextStyle(
                     fontSize: 15, fontWeight: FontWeight.bold,
@@ -35,7 +35,7 @@ class _SignInPageState extends State<SignInPage> {
                   ),),
               ),
               //TextField for Email
-              Padding(
+              const Padding(
                 padding: EdgeInsets.all(10),
                 child: TextField(
                   decoration: InputDecoration(
@@ -46,7 +46,7 @@ class _SignInPageState extends State<SignInPage> {
                 ),
               ),
               //TextField for Password
-              Padding(
+              const Padding(
                 padding: EdgeInsets.all(10),
                 child: TextField(
                   obscureText: true,
@@ -80,7 +80,7 @@ class _SignInPageState extends State<SignInPage> {
                       );
                     },
                     child: Row(
-                      children: [
+                      children: const [
                         Text("LOGIN"),
                         Icon(Icons.forward),
                       ],
@@ -94,14 +94,14 @@ class _SignInPageState extends State<SignInPage> {
                 padding: const EdgeInsets.fromLTRB(100, 150, 10, 20),
                 child: Row(
                   children: [
-                    Text('Dont have an account?',
+                    const Text('Dont have an account?',
                       style: TextStyle(
                           fontSize: 12, fontWeight: FontWeight.bold
                       ),),
 
                     // GestureDetector for sign up
                     GestureDetector(
-                        child: Text('Sign up',
+                        child: const Text('Sign up',
                           style: TextStyle(
                               fontSize: 15,
                               fontWeight: FontWeight.bold,

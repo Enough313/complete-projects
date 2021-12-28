@@ -115,7 +115,7 @@ class _Hotel_HomePageState extends State<Hotel_HomePage> {
       itemname.length,
           (index) => MenuDataModel(itemname[index], '${url[index]}',
           subtitle[index],icond[index],iconu[index],
-              iconu_name[index],icond_name[index],'${price[index]}','${description[index]}')
+          iconu_name[index],icond_name[index],'${price[index]}','${description[index]}')
   );
 
   var dropdownValue='Indonesia';
@@ -130,22 +130,22 @@ class _Hotel_HomePageState extends State<Hotel_HomePage> {
             children: [
 
               // row for picture
-             Padding(
-               padding: const EdgeInsets.fromLTRB(8, 8, 8, 0),
-               child: Row(
-                 children: const [
-                   Text('Hi,Edward',
-                     style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
-                   Padding(
-                     padding: EdgeInsets.only(left: 220),
-                     child: CircleAvatar(
-                       radius: 20,
-                       backgroundImage: AssetImage('images/mobashir.png'),
-                     ),
-                   )
-                 ],
-               ),
-             ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(8, 8, 8, 0),
+                child: Row(
+                  children: const [
+                    Text('Hi,Edward',
+                      style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+                    Padding(
+                      padding: EdgeInsets.only(left: 220),
+                      child: CircleAvatar(
+                        radius: 20,
+                        backgroundImage: AssetImage('images/mobashir.png'),
+                      ),
+                    )
+                  ],
+                ),
+              ),
               // row for location
               Padding(
                 padding: const EdgeInsets.fromLTRB(8, 0, 8, 0),
@@ -182,7 +182,7 @@ class _Hotel_HomePageState extends State<Hotel_HomePage> {
                     borderRadius: BorderRadius.circular(10)
                 ),
                 child: TextField(
-                  textAlignVertical: TextAlignVertical.bottom,
+                    textAlignVertical: TextAlignVertical.bottom,
                     decoration: InputDecoration(
                         hintStyle: TextStyle(color: Color(0xffD0D4DD),),
                         prefixIcon: Icon(Icons.search),
@@ -203,8 +203,8 @@ class _Hotel_HomePageState extends State<Hotel_HomePage> {
                   children: [
                     const Text('Category',
                       style: TextStyle(
-                      fontWeight: FontWeight.bold
-                    ),),
+                          fontWeight: FontWeight.bold
+                      ),),
                     Padding(
                       padding: const EdgeInsets.only(left: 230),
                       child: GestureDetector(
@@ -215,7 +215,7 @@ class _Hotel_HomePageState extends State<Hotel_HomePage> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                 builder: (context) => AllCategory()),
+                                  builder: (context) => AllCategory()),
                             );
                           }
                       ),
@@ -230,29 +230,29 @@ class _Hotel_HomePageState extends State<Hotel_HomePage> {
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
                   children: [
-                Container(
-                  height: 100,
-                  width: 80,
-                  decoration:  BoxDecoration(
-                      color: Color(0xffEFEBF9),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                       child: Padding(
-                         padding: const EdgeInsets.fromLTRB(8, 25, 8, 8),
-                         child: Column(
-                           children: const [
-                             Icon(Icons.sensor_door,color: Color(0xff5B41C8),),
-                             Padding(
-                               padding: EdgeInsets.only(top: 10),
-                               child: Text('Room',
-                                 style: TextStyle(color: Color(0xff5B41C8))
-                               ),
-                             )
-                           ],
-                         ),
-                       ),
+                    Container(
+                      height: 100,
+                      width: 80,
+                      decoration:  BoxDecoration(
+                        color: Color(0xffEFEBF9),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(8, 25, 8, 8),
+                        child: Column(
+                          children: const [
+                            Icon(Icons.sensor_door,color: Color(0xff5B41C8),),
+                            Padding(
+                              padding: EdgeInsets.only(top: 10),
+                              child: Text('Room',
+                                  style: TextStyle(color: Color(0xff5B41C8))
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
 
-                ),
+                    ),
 
 
 
@@ -261,8 +261,8 @@ class _Hotel_HomePageState extends State<Hotel_HomePage> {
                       height: 100,
                       width: 80,
                       decoration: BoxDecoration(
-                          color: Color(0xffEFEBF9),
-                          borderRadius: BorderRadius.circular(10),
+                        color: Color(0xffEFEBF9),
+                        borderRadius: BorderRadius.circular(10),
                       ),
                       child: Padding(
                         padding: const EdgeInsets.fromLTRB(8, 25, 8, 8),
@@ -283,14 +283,14 @@ class _Hotel_HomePageState extends State<Hotel_HomePage> {
                       height: 100,
                       width: 80,
                       decoration: BoxDecoration(
-                          color: Color(0xffEFEBF9),
+                        color: Color(0xffEFEBF9),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Padding(
                         padding: const EdgeInsets.fromLTRB(8, 25, 8, 8),
                         child: Column(
                           children: const [
-                           Icon(Icons.hotel,color: Color(0xff5B41C8)),
+                            Icon(Icons.hotel,color: Color(0xff5B41C8)),
                             Padding(
                               padding: EdgeInsets.only(top: 10),
                               child: Text('Hotel',
@@ -305,14 +305,14 @@ class _Hotel_HomePageState extends State<Hotel_HomePage> {
                       height: 100,
                       width: 80,
                       decoration:  BoxDecoration(
-                          color: Color(0xffEFEBF9),
+                        color: Color(0xffEFEBF9),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Padding(
                         padding: const EdgeInsets.fromLTRB(8, 25, 8, 8),
                         child: Column(
                           children: const [
-                           Icon(Icons.villa,color: Color(0xff5B41C8)),
+                            Icon(Icons.villa,color: Color(0xff5B41C8)),
                             Padding(
                               padding: EdgeInsets.only(top: 10),
                               child: Text('Villa',
@@ -323,7 +323,7 @@ class _Hotel_HomePageState extends State<Hotel_HomePage> {
                       ),
                     ),
 
-                 ],
+                  ],
                 ),
               ),
 
@@ -332,15 +332,15 @@ class _Hotel_HomePageState extends State<Hotel_HomePage> {
                 child: Row(
                   children: [
                     const Text('Nearby you',
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold
-                      )),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold
+                        )),
                     Padding(
                       padding: const EdgeInsets.only(left: 220),
                       child: GestureDetector(
                           child: const
                           Text('See All',style: TextStyle(
-                             color: Color(0xffFEE18A),
+                            color: Color(0xffFEE18A),
                             decoration: TextDecoration.underline,
                           ),
                           ),
@@ -383,15 +383,15 @@ class _Hotel_HomePageState extends State<Hotel_HomePage> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Container(
-                                      //  color: Colors.redAccent,
+                                        //  color: Colors.redAccent,
                                         height: 90,width: double.infinity,
-                                          decoration: BoxDecoration(
-                                              borderRadius:  BorderRadius.circular(15),
-                                            image: DecorationImage(
+                                        decoration: BoxDecoration(
+                                          borderRadius:  BorderRadius.circular(15),
+                                          image: DecorationImage(
                                               image: AssetImage(itemData[index].imageurl),
                                               fit: BoxFit.cover
-                                            ),
                                           ),
+                                        ),
 
                                       ),
                                       Padding(

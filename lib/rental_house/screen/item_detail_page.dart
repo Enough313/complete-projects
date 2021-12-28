@@ -7,8 +7,8 @@ import '../data_model.dart';
 import 'gallery_img_page.dart';
 class ItemDetailPage extends StatefulWidget {
 
-   MenuDataModel data_detail;
-   ItemDetailPage({Key? key, required this.data_detail}) : super(key: key);
+  MenuDataModel data_detail;
+  ItemDetailPage({Key? key, required this.data_detail}) : super(key: key);
 
   @override
   State<ItemDetailPage> createState() => _ItemDetailPageState();
@@ -23,7 +23,7 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
     'images/courtyard_home_pic.png',
     'images/bathroom_home_pic.png',
   ];
-  
+
   @override
   Widget build(BuildContext context) {
     final List<GalleryDataModel> itemData = List.generate(gallery_img.length,
@@ -69,7 +69,7 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                         Row(
                           children: [
                             Text(widget.data_detail.near_h_name,
-                            style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white),
+                              style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(left: 100),
@@ -130,23 +130,23 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
 
                     SizedBox(height: 100, width: double.infinity,
                       child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: gallery_img.length,
-                        itemBuilder: (context, index) {
-                          return Column(
-                            children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(15)
-                                ),
-                                height: 70,
-                                width: 83,
-                                child: Card(
-                                  child: Stack(
-                                    children: [
-                                      Image.asset(itemData[index].gallery_img_url,
-                                      fit: BoxFit.cover,width: 65,),
-                                    ListTile(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: gallery_img.length,
+                          itemBuilder: (context, index) {
+                            return Column(
+                              children: [
+                                Container(
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(15)
+                                  ),
+                                  height: 70,
+                                  width: 83,
+                                  child: Card(
+                                      child: Stack(
+                                        children: [
+                                          Image.asset(itemData[index].gallery_img_url,
+                                            fit: BoxFit.cover,width: 65,),
+                                          ListTile(
                                             onTap: () {
                                               Navigator.of(context).push(MaterialPageRoute
                                                 (builder: (context)=>GalleryImgagePage(gallery_detail: itemData[index],)));
@@ -154,14 +154,14 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
 
                                           ),
 
-                                    ],
-                                  )
+                                        ],
+                                      )
 
+                                  ),
                                 ),
-                              ),
-                            ],
-                          );
-                        }),
+                              ],
+                            );
+                          }),
 
                     ),
                   ],
@@ -214,7 +214,7 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                           );
                         },
                         child: Text("Live Tour",style: TextStyle(
-                          color: Colors.black
+                            color: Colors.black
                         ),),
                       ),
                     ),
@@ -237,14 +237,14 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                           ),
 
                           onPressed: ()   {
-                                  Fluttertoast.showToast(
-                                      msg: "This is Book Now Short Toast",
-                                      timeInSecForIosWeb: 1,
-                                      backgroundColor: Colors.red,
-                                      textColor: Colors.white,
-                                      fontSize: 12.0
-                                  );
-                                },
+                            Fluttertoast.showToast(
+                                msg: "This is Book Now Short Toast",
+                                timeInSecForIosWeb: 1,
+                                backgroundColor: Colors.red,
+                                textColor: Colors.white,
+                                fontSize: 12.0
+                            );
+                          },
                           child: Text("Book Now"),
                         ),
                       ),
